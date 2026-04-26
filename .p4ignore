@@ -1,0 +1,33 @@
+# Git metadata and public publish repo noise
+.git/
+.gitignore
+
+# OS / editor noise
+Thumbs.db
+Desktop.ini
+*.tmp
+*.bak
+*.cache
+*.log
+
+# Python / PowerShell transient files
+__pycache__/
+*.pyc
+*.pyo
+*.ps1xml
+
+# Build outputs for future GUI tool
+bin/
+obj/
+out/
+release/
+debug/
+*.exe
+*.dll
+*.pdb
+
+# Local settings
+.vscode/
+.idea/
+*.user
+*.suo

@@ -1,0 +1,23 @@
+# Private/local tooling should stay out of the public Git repo
+incoming/
+tooling/
+local/
+
+# Local automation scripts
+*.bat
+*.ps1
+*.psm1
+
+# Future local GUI tools
+*.exe
+*.dll
+*.pdb
+*.config.user
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.cache
+Thumbs.db
+Desktop.ini
