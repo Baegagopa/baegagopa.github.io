@@ -23,8 +23,8 @@
       "is_featured": true,
       "name": "BCS Sample Utility",
       "tagline": "일상 작업을 빠르게 처리하는 생산성 도구",
-      "icon_url": "https://baegagopa.github.io/assets/sample-utility-icon.png",
-      "banner_url": "https://baegagopa.github.io/assets/sample-utility-banner.png",
+      "icon_url": "https://baegagopa.github.io/assets/sample-utility-icon.svg",
+      "banner_url": "https://baegagopa.github.io/assets/sample-utility-banner.svg",
       "platforms": {
         "android": {
           "applicationId": "com.bcs.sampleutility",
@@ -71,8 +71,8 @@
       "is_featured": false,
       "name": "BCS Budget Tracker",
       "tagline": "가계부와 예산 관리를 한 번에",
-      "icon_url": "https://baegagopa.github.io/assets/sample-finance-icon.png",
-      "banner_url": "https://baegagopa.github.io/assets/sample-finance-banner.png",
+      "icon_url": "https://baegagopa.github.io/assets/sample-finance-icon.svg",
+      "banner_url": "https://baegagopa.github.io/assets/sample-finance-banner.svg",
       "platforms": {
         "android": {
           "applicationId": "com.bcs.budgettracker",
@@ -119,8 +119,8 @@
       "is_featured": false,
       "name": "BCS Daily Health",
       "tagline": "매일 기록하는 건강 습관 체크",
-      "icon_url": "https://baegagopa.github.io/assets/sample-health-icon.png",
-      "banner_url": "https://baegagopa.github.io/assets/sample-health-banner.png",
+      "icon_url": "https://baegagopa.github.io/assets/sample-health-icon.svg",
+      "banner_url": "https://baegagopa.github.io/assets/sample-health-banner.svg",
       "platforms": {
         "android": {
           "applicationId": "com.bcs.dailyhealth",
