@@ -1,14 +1,17 @@
-# Private/local tooling should stay out of the public Git repo
+# Private tooling stays in P4 under CrossPromoTools
+CrossPromoTools/
+
+# Legacy local staging or private folders
 incoming/
 tooling/
 local/
 
-# Local automation scripts
+# Local automation scripts in repo root should stay out of Git
 *.bat
 *.ps1
 *.psm1
 
-# Future local GUI tools
+# Future local GUI tool outputs
 *.exe
 *.dll
 *.pdb
