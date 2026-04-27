@@ -1,11 +1,11 @@
-# baegagopa.github.io
+# crosspromo
 
 Public GitHub Pages repository for published CrossPromo output only.
 
 ## Public URLs
 
-- Config: `https://baegagopa.github.io/config/crosspromo.json`
-- Asset example: `https://baegagopa.github.io/assets/sample-utility-icon.svg`
+- Config: `https://baegagopa.github.io/crosspromo/config/crosspromo.json`
+- Asset example: `https://baegagopa.github.io/crosspromo/assets/sample-utility-icon.svg`
 
 ## What This Repo Should Contain
 
