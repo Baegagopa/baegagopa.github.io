@@ -1,4 +1,4 @@
-# Private tooling stays in P4 under CrossPromoTools
+# Private tooling stays local or in P4 only; never publish it to GitHub
 CrossPromoTools/
 
 # Legacy local staging or private folders
@@ -7,6 +7,7 @@ tooling/
 local/
 
 # Local automation scripts in repo root should stay out of Git
+StartOpenCode.bat
 *.bat
 *.ps1
 *.psm1

@@ -37,3 +37,7 @@ debug/
 .idea/
 *.user
 *.suo
+
+
+# Local launcher script
+StartOpenCode.bat
