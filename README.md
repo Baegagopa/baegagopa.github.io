@@ -1,73 +1,49 @@
 # baegagopa.github.io
 
-Public GitHub Pages repository for CrossPromo publish artifacts only.
+Public GitHub Pages repository for published CrossPromo output only.
 
 ## Public URLs
 
 - Config: `https://baegagopa.github.io/config/crosspromo.json`
 - Asset example: `https://baegagopa.github.io/assets/sample-utility-icon.svg`
 
-## Recommended Folder Split
+## What This Repo Should Contain
 
-Use a single top-level workspace, but split responsibility by folder:
-
-- Git-managed public publish output
-  - `config/`
-  - `assets/`
-  - `.nojekyll`
-  - `README.md`
-  - `.gitignore`
-  - `.p4ignore`
-- P4-managed private tooling
-  - `CrossPromoTools/`
-
-## What belongs in Git
-
-Keep only public publish artifacts in this repository.
+Keep only public publish artifacts here:
 
 - `config/crosspromo.json`
 - `assets/`
 - `.nojekyll`
-- lightweight public documentation like this `README.md`
-- ignore/config files needed to keep the repo clean
+- lightweight public-facing documentation such as this `README.md`
+- ignore files needed to keep the public repo clean
 
-## What belongs in P4
+## What Must Stay Out Of GitHub
 
-Keep all private operations tooling under `CrossPromoTools/`.
+Do not commit private tooling or operator material into this public repository.
 
-Recommended examples:
+Examples that must stay outside GitHub:
 
-- GUI management tool source
-- batch or PowerShell publish helpers
-- local validation helpers
-- staging folders and temp export files
-- internal notes, drafts, and source design files
+- GUI or automation tool source
+- PowerShell helper scripts used for internal publish work
+- staging folders, temp exports, and drafts
+- internal notes, runbooks, and operator-only screenshots
+- anything under `CrossPromoTools/`
 
-## Suggested CrossPromoTools Layout
+`CrossPromoTools/` should stay local or in P4 only, and should not be tracked by Git in this public repo.
 
-```text
-CrossPromoTools/
-  App/
-  Scripts/
-  Incoming/
-  Exports/
-  Docs/
-  Temp/
-```
+## Public vs Private Rule Of Thumb
 
-A simple long-term flow is:
+Publish to GitHub only if the file is safe for any anonymous visitor to read directly in the browser.
 
-1. Manage CrossPromo content with the private tool under `CrossPromoTools/`.
-2. Export final `crosspromo.json` and final assets into the Git-managed root.
-3. Commit and push only the public publish result.
+- `public`: final config, final assets, minimal public docs
+- `private`: tooling, source materials, previews, exports, internal instructions, credentials, or anything that reveals internal workflow
 
-## Current Live Layout
+If you would hesitate to paste the file into a public issue, it does not belong in this repository.
 
-- `config/crosspromo.json`: live public config
-- `assets/`: live public images
+## Maintainer Safety
 
-## Notes
+This repo includes sample local hooks under `.githooks/` and a GitHub Actions workflow under `.github/workflows/guard-private-tooling.yml` to block tracked files under `CrossPromoTools/`.
 
-- This repository is public, so anything pushed here can be read by others.
-- If a file should not be publicly visible, keep it under `CrossPromoTools/` and manage it with P4 instead of Git.
-- Prefer keeping this repository small and publish-focused.
+- local hooks help stop accidental staging or pushing before the change leaves your machine
+- `.githooks/` is only a sample location; nothing runs automatically until you copy or symlink these hooks into `.git/hooks/` or configure `core.hooksPath`
+- the GitHub Actions check helps stop accidental publication even if a local hook was skipped
