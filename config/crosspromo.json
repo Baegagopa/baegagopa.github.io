@@ -1,5 +1,5 @@
 {
-    "version":  2,
+    "version":  3,
     "global_switch":  true,
     "cache_ttl_hours":  24,
     "display_rules":  {
@@ -12,13 +12,10 @@
                      "id":  "bcs-sample-utility",
                      "enabled":  true,
                      "app_type":  "utility",
-                     "app_kind":  "utility",
-                     "segments":  [
-                                      "utilities"
-                                  ],
                      "tags":  [
-                                  "utility",
-                                  "sample"
+                                  "productivity",
+                                  "tasks",
+                                  "quick-actions"
                               ],
                      "priority":  100,
                      "is_featured":  true,
@@ -64,13 +61,10 @@
                      "id":  "bcs-sample-game",
                      "enabled":  true,
                      "app_type":  "game",
-                     "app_kind":  "game",
-                     "segments":  [
-                                      "utilities"
-                                  ],
                      "tags":  [
-                                  "utility",
-                                  "sample"
+                                  "casual",
+                                  "arcade",
+                                  "fun"
                               ],
                      "priority":  100,
                      "is_featured":  true,
@@ -116,14 +110,10 @@
                      "id":  "bcs-sample-finance",
                      "enabled":  true,
                      "app_type":  "utility",
-                     "app_kind":  "finance",
-                     "segments":  [
-                                      "finance",
-                                      "tracker"
-                                  ],
                      "tags":  [
-                                  "ledger",
                                   "budget",
+                                  "expense-tracking",
+                                  "ledger",
                                   "finance"
                               ],
                      "priority":  80,
@@ -170,15 +160,11 @@
                      "id":  "bcs-sample-health",
                      "enabled":  true,
                      "app_type":  "utility",
-                     "app_kind":  "health",
-                     "segments":  [
-                                      "health",
-                                      "habit"
-                                  ],
                      "tags":  [
                                   "health",
-                                  "habit",
-                                  "daily"
+                                  "habit-tracking",
+                                  "daily-log",
+                                  "wellness"
                               ],
                      "priority":  60,
                      "is_featured":  false,
@@ -224,17 +210,12 @@
                      "id":  "bcs-image-compressor-exif",
                      "enabled":  true,
                      "app_type":  "utility",
-                     "app_kind":  "image",
-                     "segments":  [
-                                      "utilities",
-                                      "image",
-                                      "privacy"
-                                  ],
                      "tags":  [
-                                  "image-compression",
+                                  "image",
+                                  "photo",
+                                  "compression",
                                   "exif",
                                   "privacy",
-                                  "photo",
                                   "resize"
                               ],
                      "priority":  70,
@@ -281,18 +262,12 @@
                      "id":  "bcs-date-calculator",
                      "enabled":  true,
                      "app_type":  "utility",
-                     "app_kind":  "date",
-                     "segments":  [
-                                      "utilities",
-                                      "calendar",
-                                      "productivity"
-                                  ],
                      "tags":  [
-                                  "bcs-date-calculator",
                                   "calendar",
                                   "date-math",
                                   "age",
-                                  "utc"
+                                  "utc",
+                                  "timestamp"
                               ],
                      "priority":  65,
                      "is_featured":  false,
