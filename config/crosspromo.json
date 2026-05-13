@@ -1,7 +1,14 @@
 {
-    "version":  3,
+    "version":  4,
     "global_switch":  true,
     "cache_ttl_hours":  24,
+    "url_bases":  {
+                      "assets":  "https://baegagopa.github.io/crosspromo/assets/",
+                      "stores":  {
+                                     "android":  "https://play.google.com/store/apps/details?id=",
+                                     "ios":  "https://apps.apple.com/app/id"
+                                 }
+                  },
     "display_rules":  {
                           "max_daily_impressions":  3,
                           "min_sessions_before_show":  2,
@@ -21,16 +28,15 @@
                      "is_featured":  true,
                      "name":  "BCS Sample Utility",
                      "tagline":  "일상 작업을 빠르게 처리하는 생산성 도구",
-                     "icon_url":  "https://baegagopa.github.io/crosspromo/assets/sample-utility-icon.png",
-                     "banner_url":  "https://baegagopa.github.io/crosspromo/assets/sample-utility-banner.png",
+                     "icon_path":  "sample-utility-icon.png",
+                     "banner_path":  "sample-utility-banner.png",
                      "platforms":  {
                                        "android":  {
-                                                       "applicationId":  "com.bcs.sampleutility",
-                                                       "storeUrl":  "https://play.google.com/store/apps/details?id=com.bcs.sampleutility"
+                                                       "applicationId":  "com.bcs.sampleutility"
                                                    },
                                        "ios":  {
                                                    "bundleId":  "",
-                                                   "storeUrl":  ""
+                                                   "appStoreId":  ""
                                                }
                                    },
                      "exclude_current_game":  true,
@@ -70,16 +76,15 @@
                      "is_featured":  true,
                      "name":  "BCS Sample Game",
                      "tagline":  "아주아주 재밌어요!",
-                     "icon_url":  "https://baegagopa.github.io/crosspromo/assets/sample-utility-icon.png",
-                     "banner_url":  "https://baegagopa.github.io/crosspromo/assets/sample-utility-banner.png",
+                     "icon_path":  "sample-utility-icon.png",
+                     "banner_path":  "sample-utility-banner.png",
                      "platforms":  {
                                        "android":  {
-                                                       "applicationId":  "com.bcs.sampleutility",
-                                                       "storeUrl":  "https://play.google.com/store/apps/details?id=com.bcs.sampleutility"
+                                                       "applicationId":  "com.bcs.sampleutility"
                                                    },
                                        "ios":  {
                                                    "bundleId":  "",
-                                                   "storeUrl":  ""
+                                                   "appStoreId":  ""
                                                }
                                    },
                      "exclude_current_game":  true,
@@ -120,16 +125,15 @@
                      "is_featured":  false,
                      "name":  "BCS Budget Tracker",
                      "tagline":  "가계부와 예산 관리를 한 번에",
-                     "icon_url":  "https://baegagopa.github.io/crosspromo/assets/sample-finance-icon.png",
-                     "banner_url":  "https://baegagopa.github.io/crosspromo/assets/sample-finance-banner.png",
+                     "icon_path":  "sample-finance-icon.png",
+                     "banner_path":  "sample-finance-banner.png",
                      "platforms":  {
                                        "android":  {
-                                                       "applicationId":  "com.bcs.budgettracker",
-                                                       "storeUrl":  "https://play.google.com/store/apps/details?id=com.bcs.budgettracker"
+                                                       "applicationId":  "com.bcs.budgettracker"
                                                    },
                                        "ios":  {
                                                    "bundleId":  "",
-                                                   "storeUrl":  ""
+                                                   "appStoreId":  ""
                                                }
                                    },
                      "exclude_current_game":  true,
@@ -170,16 +174,15 @@
                      "is_featured":  false,
                      "name":  "BCS Daily Health",
                      "tagline":  "매일 기록하는 건강 습관 체크",
-                     "icon_url":  "https://baegagopa.github.io/crosspromo/assets/sample-health-icon.png",
-                     "banner_url":  "https://baegagopa.github.io/crosspromo/assets/sample-health-banner.png",
+                     "icon_path":  "sample-health-icon.png",
+                     "banner_path":  "sample-health-banner.png",
                      "platforms":  {
                                        "android":  {
-                                                       "applicationId":  "com.bcs.dailyhealth",
-                                                       "storeUrl":  "https://play.google.com/store/apps/details?id=com.bcs.dailyhealth"
+                                                       "applicationId":  "com.bcs.dailyhealth"
                                                    },
                                        "ios":  {
                                                    "bundleId":  "",
-                                                   "storeUrl":  ""
+                                                   "appStoreId":  ""
                                                }
                                    },
                      "exclude_current_game":  true,
@@ -222,16 +225,15 @@
                      "is_featured":  false,
                      "name":  "Image Compressor EXIF",
                      "tagline":  "이미지 용량을 줄이고 EXIF 정보를 로컬에서 제거",
-                     "icon_url":  "https://baegagopa.github.io/crosspromo/assets/image-compressor-exif-icon.png",
-                     "banner_url":  "https://baegagopa.github.io/crosspromo/assets/image-compressor-exif-banner.png",
+                     "icon_path":  "image-compressor-exif-icon.png",
+                     "banner_path":  "image-compressor-exif-banner.png",
                      "platforms":  {
                                        "android":  {
-                                                       "applicationId":  "com.bcs.image_compressor_exif",
-                                                       "storeUrl":  "https://play.google.com/store/apps/details?id=com.bcs.image_compressor_exif"
+                                                       "applicationId":  "com.bcs.image_compressor_exif"
                                                    },
                                        "ios":  {
                                                    "bundleId":  "",
-                                                   "storeUrl":  ""
+                                                   "appStoreId":  ""
                                                }
                                    },
                      "exclude_current_game":  true,
@@ -273,16 +275,15 @@
                      "is_featured":  false,
                      "name":  "Date Calculator",
                      "tagline":  "Calendar-day math with age, UTC timestamp, and locale-aware date tools.",
-                     "icon_url":  "https://baegagopa.github.io/crosspromo/assets/date-calculator-icon.png",
-                     "banner_url":  "https://baegagopa.github.io/crosspromo/assets/date-calculator-banner.png",
+                     "icon_path":  "date-calculator-icon.png",
+                     "banner_path":  "date-calculator-banner.png?v=2",
                      "platforms":  {
                                        "android":  {
-                                                       "applicationId":  "com.bcs.date_calculator",
-                                                       "storeUrl":  "https://play.google.com/store/apps/details?id=com.bcs.date_calculator"
+                                                       "applicationId":  "com.bcs.date_calculator"
                                                    },
                                        "ios":  {
                                                    "bundleId":  "",
-                                                   "storeUrl":  ""
+                                                   "appStoreId":  ""
                                                }
                                    },
                      "exclude_current_game":  true,
